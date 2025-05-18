@@ -6,3 +6,5 @@ with open("data/sample.txt", "r") as file:
     print(content)
 
 print('Hello, !')
+
+print("Observing Changes")
