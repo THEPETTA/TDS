@@ -1,0 +1,1 @@
+print("Welcome to the Tools in Data Science course!")
