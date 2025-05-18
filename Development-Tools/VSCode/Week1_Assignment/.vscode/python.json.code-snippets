@@ -1,0 +1,9 @@
+{
+    "Print Hello": {
+        "prefix": "ph",
+        "body": [
+            "print('Hello, $1!')"
+        ],
+        "description": "Print a custom hello message"
+    }
+}
