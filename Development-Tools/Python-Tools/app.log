@@ -1,0 +1,16 @@
+2025-05-18 13:34:52,285 - DEBUG - Starting the add operation...
+2025-05-18 13:34:52,285 - DEBUG - Adding 10 and 20
+2025-05-18 13:34:52,285 - DEBUG - Result: 30
+2025-05-18 13:42:49,496 - DEBUG - Starting data analysis...
+2025-05-18 13:42:49,496 - DEBUG - Loading data from: data.csv
+2025-05-18 13:42:49,510 - DEBUG - Data loaded successfully. Analyzing...
+2025-05-18 13:42:49,521 - DEBUG - Data summary:
+             age
+count   2.000000
+mean   23.500000
+std     0.707107
+min    23.000000
+25%    23.250000
+50%    23.500000
+75%    23.750000
+max    24.000000

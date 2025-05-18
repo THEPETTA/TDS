@@ -1,0 +1,168 @@
+ Editor: VS Code - Practice Tasks
+
+Here are a series of practice tasks to thoroughly cover VS Code essentials:
+Task 1: Basic Setup and Navigation
+
+    Open VS Code.
+
+    Create a new file named intro.py.
+
+    Write the following code:
+
+print("Welcome to the Tools in Data Science course!")
+
+Save the file.
+
+Open the terminal (Ctrl + Backtick) and run the file using:
+
+    python intro.py
+
+Task 2: Multiple Files and Tabs
+
+    Create two new files:
+
+        math_operations.py
+
+        string_operations.py
+
+    In math_operations.py, write:
+
+def add(a, b):
+    return a + b
+
+print(add(2, 3))
+
+In string_operations.py, write:
+
+    def greet(name):
+        return f"Hello, {name}!"
+
+    print(greet("Data Science"))
+
+    Open both files in split-screen mode:
+
+        Ctrl + \ to split the editor into two views.
+
+        Drag string_operations.py to the second view.
+
+    Run both files in separate terminals.
+
+Task 3: Extensions and Shortcuts
+
+    Install the following extensions:
+
+        Python
+
+        GitLens
+
+        Prettier - Code Formatter
+
+    Format the math_operations.py file using Prettier:
+
+        Right-click and select Format Document.
+
+    Use the Command Palette (Ctrl + Shift + P) to open the Python: Run Python File in Terminal command.
+
+    Open the GitLens extension (Ctrl + Shift + G) and explore the file history.
+
+Task 4: Working with Folders and Workspaces
+
+    Create a new folder named Week1_Assignment.
+
+    Open the folder in VS Code (File > Open Folder).
+
+    Inside the folder, create the following structure:
+
+Week1_Assignment/
+├── data/
+│   └── sample.txt
+├── main.py
+└── utils.py
+
+In data/sample.txt, add the following text:
+
+Data Science is powerful!
+
+In main.py, write:
+
+with open("data/sample.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+In utils.py, write:
+
+def multiply(a, b):
+    return a * b
+
+Import the multiply function in main.py:
+
+    from utils import multiply
+
+    print(multiply(2, 3))
+
+Task 5: Debugging and Breakpoints
+
+    Open main.py.
+
+    Set a breakpoint on the line print(multiply(2, 3)) by clicking in the left margin.
+
+    Go to the Debug view (Ctrl + Shift + D).
+
+    Select Run and Debug and choose Python File.
+
+    Step through the code using the Step Over (F10) and Step Into (F11) commands.
+
+Task 6: Code Snippets and Autocompletion
+
+    Create a custom code snippet:
+
+        Go to File > Preferences > User Snippets.
+
+        Select New Snippet and name it python.json.
+
+    Add the following snippet:
+
+    {
+        "Print Hello": {
+            "prefix": "ph",
+            "body": [
+                "print('Hello, $1!')"
+            ],
+            "description": "Print a custom hello message"
+        }
+    }
+
+    In main.py, type ph and observe the auto-completion.
+
+    Press Tab to insert the snippet.
+
+Task 7: Git Integration
+
+    Initialize a new Git repository in the Week1_Assignment folder:
+
+git init
+
+Open the Source Control view (Ctrl + Shift + G).
+
+Stage all files and make a commit:
+
+    git add .
+    git commit -m "Initial commit"
+
+    Make a change in main.py and observe the changes in the Source Control view.
+
+Task 8: Terminal Shortcuts and Customization
+
+    Open the terminal (Ctrl + Backtick).
+
+    Run multiple terminals:
+
+        First Terminal: Run main.py.
+
+        Second Terminal: Run utils.py.
+
+    Customize the terminal appearance:
+
+        Go to File > Preferences > Settings.
+
+        Search for Terminal > Integrated > Font Size and adjust it.
