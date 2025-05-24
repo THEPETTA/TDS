@@ -1,0 +1,8 @@
+cd target_folder
+for f in *; do
+  # Check if the filename contains at least one digit
+  if [[ "$f" =~ [0-9] ]]; then
+    newname=$(echo "$f" | perl -pe 's/\d/($_+1)%10/eg')
+    mv -- "$f" "$newname"
+  fi
+done
